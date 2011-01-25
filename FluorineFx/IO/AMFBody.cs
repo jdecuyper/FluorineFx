@@ -291,6 +291,7 @@ namespace FluorineFx.IO
 		}
         /// <summary>
         /// This method supports the Fluorine infrastructure and is not intended to be used directly from your code.
+        /// The returned IList has property IsFixedSize set to true, no new elements can be added to it.
         /// </summary>
         public virtual IList GetParameterList()
 		{

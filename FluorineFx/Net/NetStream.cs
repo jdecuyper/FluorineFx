@@ -389,7 +389,7 @@ namespace FluorineFx.Net
                 }
                 else
                 {
-                    string msg = __Res.GetString(__Res.Invocation_NoSuitableMethod, notify.ServiceCall.ServiceMethodName);
+                    string msg = __Res.GetString(__Res.Invocation_NoSuitableMethod, notify.ServiceCall.ServiceMethodName, _client.GetType().Name);
                     this.RaiseNetStatus(new FluorineException(msg));
                 }
             }

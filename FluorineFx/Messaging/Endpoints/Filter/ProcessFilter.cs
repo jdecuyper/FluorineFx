@@ -149,12 +149,15 @@ namespace FluorineFx.Messaging.Endpoints.Filter
                         }
                     }
 
+                    object instance;
                     FactoryInstance factoryInstance = destination.GetFactoryInstance();
-				    factoryInstance.Source = amfBody.TypeName;
-				    if( FluorineContext.Current.ActivationMode != null ) //query string can override the activation mode
-					    factoryInstance.Scope = FluorineContext.Current.ActivationMode;
-				    object instance = factoryInstance.Lookup();
-
+                    lock (factoryInstance)
+                    {
+                        factoryInstance.Source = amfBody.TypeName;
+                        if (FluorineContext.Current.ActivationMode != null)//query string can override the activation mode
+                            factoryInstance.Scope = FluorineContext.Current.ActivationMode;
+                        instance = factoryInstance.Lookup();
+                    }
 				    if( instance != null )
                     {
                         try
@@ -172,7 +175,7 @@ namespace FluorineFx.Messaging.Endpoints.Filter
 
                             MethodInfo mi = null;
                             if (!amfBody.IsRecordsetDelivery)
-                                mi = MethodHandler.GetMethod(instance.GetType(), amfBody.Method, amfBody.GetParameterList());
+                                mi = MethodHandler.GetMethod(instance.GetType(), amfBody.Method, parameterList);
                             else
                             {
                                 //will receive recordsetid only (ignore)

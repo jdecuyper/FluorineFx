@@ -98,10 +98,14 @@ namespace FluorineFx.Remoting
                 }
             }
 
+            object instance;
             FactoryInstance factoryInstance = this.Destination.GetFactoryInstance();
-			factoryInstance.Source = className;
-			object instance = factoryInstance.Lookup();
-			
+            lock (factoryInstance)
+            {
+                factoryInstance.Source = className;
+                instance = factoryInstance.Lookup();
+            }
+            
 			if( instance != null )
 			{
                 try

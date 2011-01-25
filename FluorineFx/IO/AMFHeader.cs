@@ -32,6 +32,7 @@ namespace FluorineFx.IO
         public const string CredentialsHeader = "Credentials";
         /// <summary>
         /// This member supports the Fluorine infrastructure and is not intended to be used directly from your code.
+        /// DSid stands for Data Set Identification. It represents a Guid used to identify the remote client.
         /// </summary>
         public const string AMFDSIdHeader = "DSId";
         /// <summary>

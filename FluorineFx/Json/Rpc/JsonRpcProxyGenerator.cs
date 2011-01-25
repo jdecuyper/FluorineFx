@@ -68,9 +68,13 @@ namespace FluorineFx.Json.Rpc
                     source = destination.Source;
                 }
             }
+            Type type;
             FactoryInstance factoryInstance = destination.GetFactoryInstance();
-            factoryInstance.Source = source;
-            Type type = factoryInstance.GetInstanceClass();
+            lock (factoryInstance)
+            {
+                factoryInstance.Source = source;
+                type = factoryInstance.GetInstanceClass();
+            }
             if (type != null)
             {
                 ServiceClass serviceClass = JsonRpcServiceReflector.FromType(type);

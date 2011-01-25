@@ -137,7 +137,7 @@ namespace FluorineFx
             }
 			if( suitableMethodInfos.Count == 0 )
 			{
-                string msg = __Res.GetString(__Res.Invocation_NoSuitableMethod, methodName);
+                string msg = __Res.GetString(__Res.Invocation_NoSuitableMethod, methodName, type.Name);
                 if (traceError)
                 {
 #if !SILVERLIGHT

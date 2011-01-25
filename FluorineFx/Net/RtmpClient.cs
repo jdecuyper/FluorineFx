@@ -333,7 +333,7 @@ namespace FluorineFx.Net
                 }
                 else// if (!onStatus)
                 {
-                    string msg = __Res.GetString(__Res.Invocation_NoSuitableMethod, call.ServiceMethodName);
+                    string msg = __Res.GetString(__Res.Invocation_NoSuitableMethod, call.ServiceMethodName, _netConnection.Client.GetType().Name);
                     call.Status = Messaging.Rtmp.Service.Call.STATUS_METHOD_NOT_FOUND;
                     call.Exception = new FluorineException(msg);
                     _netConnection.RaiseNetStatus(call.Exception);

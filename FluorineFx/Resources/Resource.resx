@@ -232,7 +232,7 @@
     <value>Could not find a suitable method with name {0}</value>
   </data>
   <data name="Invocation_NoSuitableMethod" xml:space="preserve">
-    <value>Could not find a suitable method with name {0}</value>
+    <value>Could not find a suitable method with name {0} inside class {1}</value>
   </data>
   <data name="Invocation_ParameterType" xml:space="preserve">
     <value>Parameter {0}  received {1}</value>

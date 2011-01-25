@@ -126,7 +126,7 @@ namespace FluorineFx.Messaging.Rtmp.Service
                 mi = MethodHandler.GetMethod(service.GetType(), serviceMethod, arguments, false, false, true);
                 if (mi == null)
                 {
-                    string msg = __Res.GetString(__Res.Invocation_NoSuitableMethod, serviceMethod);
+                    string msg = __Res.GetString(__Res.Invocation_NoSuitableMethod, serviceMethod, service.GetType().Name);
                     call.Status = Call.STATUS_METHOD_NOT_FOUND;
                     call.Exception = new FluorineException(msg);
                     return false;
