@@ -592,7 +592,7 @@
     <value>404 Failed to handle JSON request</value>
   </data>
   <data name="Type_InitError" xml:space="preserve">
-    <value>Failed to locate the requested  type {0}</value>
+    <value>Failed to locate the requested type {0}</value>
   </data>
   <data name="Type_Mismatch" xml:space="preserve">
     <value>The received RPC source does not meet the destination source specification.</value>
