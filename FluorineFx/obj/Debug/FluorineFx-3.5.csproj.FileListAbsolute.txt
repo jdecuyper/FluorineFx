@@ -1,0 +1,12 @@
+C:\FluorineFx\FluorineFx\obj\Debug\ResolveAssemblyReference.cache
+C:\FluorineFx\FluorineFx\obj\Debug\FluorineFx.Resources.Resource.resources
+C:\FluorineFx\FluorineFx\obj\Debug\FluorineFx-3.5.csproj.GenerateResource.Cache
+C:\FluorineFx\source\FluorineFx\obj\Debug\ResolveAssemblyReference.cache
+C:\FluorineFx\source\FluorineFx\obj\Debug\FluorineFx.Resources.Resource.resources
+C:\FluorineFx\source\FluorineFx\obj\Debug\FluorineFx-3.5.csproj.GenerateResource.Cache
+C:\FluorineFx\source\Bin\net\3.5\FluorineFx.dll
+C:\FluorineFx\source\Bin\net\3.5\FluorineFx.pdb
+C:\FluorineFx\source\FluorineFx\obj\Debug\FluorineFx.dll
+C:\FluorineFx\source\FluorineFx\obj\Debug\FluorineFx.pdb
+C:\FluorineFx\Bin\net\3.5\FluorineFx.dll
+C:\FluorineFx\Bin\net\3.5\FluorineFx.pdb
