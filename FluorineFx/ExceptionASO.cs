@@ -71,7 +71,7 @@ namespace FluorineFx
 
             Add("code", "Server.Processing");
             Add("level", "error");
-            Add("description", exception.Message + String.Format("(Type: {0}, Method: {1})", typeName, methodName));
+            Add("description", exception.Message + String.Format(" (Type: {0}, Method: {1})", typeName, methodName));
             if (FluorineConfiguration.Instance.FluorineSettings.CustomErrors.StackTrace)
                 Add("details", exception.StackTrace);
             else
