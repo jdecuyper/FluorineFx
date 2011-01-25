@@ -1,5 +1,6 @@
 Source code belongs to http://www.fluorinefx.com/
-My FluorineFx github project is branched from revision #209 located at http://code.google.com/p/fluorinefx/
+
+This FluorineFx github project is branched from revision #209 located at http://code.google.com/p/fluorinefx/
 
 What I changed to the source code:
 - fixed a bug that occasionated by a race condition in FluorineFx/Messaging/Endpoints/Filter/ProcessFilter.cs. The FactoryInstance class is shared between 
