@@ -10,3 +10,7 @@ C:\FluorineFx\source\FluorineFx\obj\Debug\FluorineFx.dll
 C:\FluorineFx\source\FluorineFx\obj\Debug\FluorineFx.pdb
 C:\FluorineFx\Bin\net\3.5\FluorineFx.dll
 C:\FluorineFx\Bin\net\3.5\FluorineFx.pdb
+C:\FluorineFx\FluorineFx\obj\Debug\FluorineFx.pdb
+C:\FluorineFx\FluorineFx\Bin\net\3.5\FluorineFx.dll
+C:\FluorineFx\FluorineFx\Bin\net\3.5\FluorineFx.pdb
+C:\FluorineFx\FluorineFx\obj\Debug\FluorineFx.dll
