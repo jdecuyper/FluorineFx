@@ -13,4 +13,6 @@ Run the SN utility from the .NET Framework SDK as follows:
 
 A new strong name key pair will be created and written to the fluorine.snk file.
 
+If sn.exe is not available on your workstation (generally found in C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin), you will need to download the Windows SDK 6.0a.
+
 
