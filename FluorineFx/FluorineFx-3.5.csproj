@@ -438,6 +438,14 @@
     <Compile Include="Scheduling\TriggerFiredBundle.cs" />
     <Compile Include="Security\LoginManager.cs" />
     <Compile Include="Silverlight\PolicyServer.cs" />
+    <Compile Include="SWX\SwxAssembler.cs" />
+    <Compile Include="SWX\SwxHandler.cs" />
+    <Compile Include="SWX\Writers\ISWXWriter.cs" />
+    <Compile Include="SWX\Writers\SWXArrayWriter.cs" />
+    <Compile Include="SWX\Writers\SWXBooleanWriter.cs" />
+    <Compile Include="SWX\Writers\SWXDoubleWriter.cs" />
+    <Compile Include="SWX\Writers\SWXObjectWriter.cs" />
+    <Compile Include="SWX\Writers\SWXStringWriter.cs" />
     <Compile Include="Threading\FastReaderWriterLock.cs" />
     <Compile Include="Util\ArrayUtils.cs" />
     <Compile Include="Util\AsyncResult.cs" />
@@ -777,6 +785,8 @@
     </None>
     <None Include="log4net.config" />
     <None Include="App.config.txt" />
+    <None Include="snk\fluorine.snk" />
+    <None Include="snk\fluorine.snk.readme" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="antlr.runtime, Version=2.7.6.2, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL" />
@@ -800,5 +810,15 @@
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bin\net\3.5\antlr.runtime.dll" />
+    <Content Include="Bin\net\3.5\FluorineFx.dll" />
+    <Content Include="Bin\net\3.5\FluorineFx.pdb" />
+    <Content Include="Bin\net\3.5\log4net.dll" />
+    <Content Include="Bin\net\4.0\antlr.runtime.dll" />
+    <Content Include="Bin\net\4.0\FluorineFx.dll" />
+    <Content Include="Bin\net\4.0\FluorineFx.pdb" />
+    <Content Include="Bin\net\4.0\log4net.dll" />
   </ItemGroup>
 </Project>
